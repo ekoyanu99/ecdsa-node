@@ -9,17 +9,19 @@ function App() {
   const [privateKey, setprivateKey] = useState("")
 
   return (
-    <div className="app">
-      <Wallet
-        balance={balance}
-        setBalance={setBalance}
-        privateKey={privateKey}
-        setprivateKey={setprivateKey}
-        address={address}
-        setAddress={setAddress}
-      />
-      <Transfer setBalance={setBalance} address={address} />
-    </div>
+    <>
+      <div className="app">
+        <Wallet
+          balance={balance}
+          setBalance={setBalance}
+          privateKey={privateKey}
+          setprivateKey={setprivateKey}
+          address={address}
+          setAddress={setAddress}
+        />
+        <Transfer setBalance={setBalance} address={address} privateKey={privateKey} />
+      </div>
+    </>
   );
 }
 

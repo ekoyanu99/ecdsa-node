@@ -30,7 +30,6 @@ function Wallet({ address, setAddress, balance, setBalance, privateKey, setpriva
       <div>
         Address : {address.slice(0,10)}...
       </div>
-
       <div className="balance">Balance: {balance}</div>
     </div>
   );
